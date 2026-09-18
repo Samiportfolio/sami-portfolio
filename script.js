@@ -26,6 +26,24 @@ document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const themeToggle = document.querySelector('.theme-toggle');
+const savedTheme = localStorage.getItem('portfolio-theme');
+
+const setTheme = (theme) => {
+  const isLight = theme === 'light';
+  document.body.classList.toggle('light-theme', isLight);
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+  themeToggle.querySelector('span').textContent = isLight ? '☾' : '☼';
+};
+
+setTheme(savedTheme || 'dark');
+themeToggle.addEventListener('click', () => {
+  const nextTheme = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+  localStorage.setItem('portfolio-theme', nextTheme);
+  setTheme(nextTheme);
+});
+
 const whatsappModal = document.getElementById('whatsapp-form');
 const whatsappForm = document.getElementById('whatsapp-contact-form');
 const modalChannelLabel = document.getElementById('modal-channel-label');
@@ -50,7 +68,7 @@ document.querySelectorAll('.contact-trigger').forEach((trigger) => {
       ? 'Fill in your details and WhatsApp will open with your message ready to send.'
       : selectedContact === 'email'
         ? 'Fill in your details and your email app will open with the message ready to send.'
-        : 'Fill in your details. Your message will be copied, then your profile will open so you can paste and send it.';
+        : 'Fill in your details. Your message will be copied, then the chat or profile will open so you can paste and send it.';
     whatsappModal.classList.add('is-open');
     whatsappModal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
@@ -74,8 +92,8 @@ whatsappForm.addEventListener('submit', (event) => {
   const destinations = {
     whatsapp: `https://wa.me/923291504030?text=${encodedMessage}`,
     email: `mailto:chsami1596@gmail.com?subject=Portfolio%20contact%20from%20${encodeURIComponent(details.get('name'))}&body=${encodedMessage}`,
-    instagram: 'https://instagram.com/ch_sami1596',
-    facebook: 'https://facebook.com'
+    instagram: 'https://ig.me/m/ch_sami1596',
+    facebook: 'https://www.facebook.com/share/18nmsbmomQ/'
   };
   if (selectedContact === 'instagram' || selectedContact === 'facebook') {
     navigator.clipboard?.writeText(message);
