@@ -4,11 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Samiullah's portfolio — trader, market analyst, and aspiring web developer." />
+  <meta name="theme-color" content="#101614" />
+  <meta property="og:title" content="Samiullah | Trader & Web Developer" />
+  <meta property="og:description" content="A portfolio exploring the space between financial thinking and modern technology." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="sami.png" />
+  <link rel="canonical" href="https://your-domain.com/" />
   <title>Samiullah | Trader & Web Developer</title>
+  <link rel="icon" type="image/png" href="sami.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Replace G-REPLACE_WITH_MEASUREMENT_ID with your Google Analytics 4 ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-REPLACE_WITH_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-REPLACE_WITH_MEASUREMENT_ID');
+  </script>
 </head>
 <body>
   <div class="page-shell">
@@ -19,11 +34,14 @@
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#business">Business</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="header-cta" href="mailto:chsami1596@gmail.com">Let's talk <span>↗</span></a>
+      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><span>☼</span></button><a class="header-cta" href="https://wa.me/923291504030?text=Hello%20Samiullah%2C%20I%27d%20like%20to%20talk.">Let's talk <span>↗</span></a></div>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     </header>
 
@@ -58,32 +76,70 @@
           <div class="section-heading"><p class="overline">A curious mind with a practical edge</p><h2>Turning curiosity<br />into <em>capability.</em></h2></div>
           <div class="about-columns"><p>My name is Samiullah. I’m deeply interested in global financial markets, forex trading, and the systems behind intelligent decisions. I study market behavior, assess risk, and think about how capital can be allocated with clarity and purpose.</p><p>Alongside trading, I’m learning to build useful digital experiences with HTML, CSS, and JavaScript. Every project is a chance to sharpen my craft, test an idea, and move one step closer to the intersection of finance and technology.</p></div>
           <div class="quote"><span>“</span><p>Learning is the goal.<br /><strong>Success is the intention.</strong></p></div>
+          <div class="profile-actions"><a class="button button-dark" href="cv.html" target="_blank" rel="noopener">View / Download CV <span>↗</span></a><span>Print or save as PDF</span></div>
+        </div>
+      </section>
+
+      <section class="education section-grid section-space" id="education">
+        <div class="section-kicker"><span>02</span><span class="line"></span><span>Education</span></div>
+        <div class="education-content reveal">
+          <div class="section-heading"><p class="overline">The foundation behind the work</p><h2>Learning with<br /><em>purpose.</em></h2></div>
+          <div class="education-list">
+            <article class="education-item"><span class="education-number">01</span><div><h3>Matriculation</h3><p>Academic foundation and disciplined study habits.</p></div><span class="education-status">Completed</span></article>
+            <article class="education-item"><span class="education-number">02</span><div><h3>FSc</h3><p>Further science education and analytical thinking.</p></div><span class="education-status">Completed</span></article>
+            <article class="education-item"><span class="education-number">03</span><div><h3>Web Development</h3><p>Continuously building practical skills in HTML, CSS, and JavaScript.</p></div><span class="education-status">Ongoing</span></article>
+          </div>
+          <div class="education-note"><span>✦</span><p>Education is an ongoing investment in better decisions, better systems, and better work.</p></div>
         </div>
       </section>
 
       <section class="skills section-space" id="skills">
-        <div class="section-kicker"><span>02</span><span class="line"></span><span>What I do</span></div>
+        <div class="section-kicker"><span>03</span><span class="line"></span><span>What I do</span></div>
         <div class="skills-header reveal"><div><p class="overline">Current focus areas</p><h2>Building a sharper<br /><em>way of thinking.</em></h2></div><p class="section-aside">I’m building a balanced toolkit: analytical enough for markets, creative enough for the web, and grounded enough to keep learning.</p></div>
         <div class="skills-list">
           <article class="skill-row reveal"><span class="skill-number">01</span><div class="skill-main"><h3>Financial Market Analysis</h3><p>Understanding price action, macro signals, and the stories behind the numbers.</p></div><span class="skill-arrow">↗</span></article>
           <article class="skill-row reveal"><span class="skill-number">02</span><div class="skill-main"><h3>Trading</h3><p>Studying markets through patience, process, and consistent observation.</p></div><span class="skill-arrow">↗</span></article>
           <article class="skill-row reveal"><span class="skill-number">03</span><div class="skill-main"><h3>Risk & Capital Strategy</h3><p>Putting risk management first and making allocation decisions with intention.</p></div><span class="skill-arrow">↗</span></article>
           <article class="skill-row reveal"><span class="skill-number">04</span><div class="skill-main"><h3>Web Development</h3><p>Creating responsive, clear, and thoughtful interfaces with HTML, CSS, and JavaScript.</p></div><span class="skill-arrow">↗</span></article>
+          <article class="skill-row reveal"><span class="skill-number">05</span><div class="skill-main"><h3>Agricultural Land</h3><p>Specializing in agricultural land sale and purchase opportunities with a focus on clear details and long-term value.</p></div><span class="skill-arrow">↗</span></article>
         </div>
+        <div class="toolkit reveal"><p class="overline">Tools in the toolkit</p><div class="toolkit-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span><span>Market research</span><span>Risk planning</span><span>Land research</span><span>Sale & purchase</span></div></div>
       </section>
 
       <section class="projects section-space" id="projects">
-        <div class="section-kicker"><span>03</span><span class="line"></span><span>Selected explorations</span></div>
+        <div class="section-kicker"><span>04</span><span class="line"></span><span>Selected explorations</span></div>
         <div class="projects-header reveal"><div><p class="overline">Learning by making</p><h2>Ideas in<br /><em>motion.</em></h2></div><a class="text-link" href="mailto:chsami1596@gmail.com?subject=Project%20collaboration">Start a conversation <span>↗</span></a></div>
         <div class="project-grid">
-          <article class="project-card project-card-dark reveal"><div class="project-top"><span class="project-type">01 / WEB TOOL</span><span class="project-icon">↗</span></div><div class="mini-dashboard"><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="mini-line"></div><span>+24.8%</span></div><div class="project-info"><h3>Market Lens</h3><p>A focused dashboard concept for tracking market observations and daily trading notes.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></div></article>
-          <article class="project-card project-card-green reveal"><div class="project-top"><span class="project-type">02 / RESEARCH</span><span class="project-icon">↗</span></div><div class="research-visual"><span class="research-orbit orbit-one"></span><span class="research-orbit orbit-two"></span><span class="research-core">R</span><span class="research-label">RISK / REWARD</span></div><div class="project-info"><h3>Risk Framework</h3><p>A personal framework for thinking about exposure, scenarios, and strategic capital allocation.</p><div class="tags"><span>ANALYSIS</span><span>STRATEGY</span></div></div></article>
-          <article class="project-card project-card-paper reveal"><div class="project-top"><span class="project-type">03 / PRACTICE</span><span class="project-icon">↗</span></div><div class="code-visual"><span>&lt;/&gt;</span><p>build<br /><b>better</b><br />every day<span class="cursor"></span></p></div><div class="project-info"><h3>Learning Lab</h3><p>An evolving collection of small experiments built while growing my frontend skills.</p><div class="tags"><span>BUILDING</span><span>ITERATING</span></div></div></article>
+          <article class="project-card project-card-dark reveal"><div class="project-top"><span class="project-type">01 / WEB TOOL</span><span class="project-icon">↗</span></div><div class="mini-dashboard"><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="mini-line"></div><span>+24.8%</span></div><div class="project-info"><h3>Market Lens</h3><p>A focused dashboard concept for tracking market observations and daily trading notes.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div><a class="project-link" href="#contact">Discuss this idea <span>↗</span></a></div></article>
+          <article class="project-card project-card-green reveal"><div class="project-top"><span class="project-type">02 / RESEARCH</span><span class="project-icon">↗</span></div><div class="research-visual"><span class="research-orbit orbit-one"></span><span class="research-orbit orbit-two"></span><span class="research-core">R</span><span class="research-label">RISK / REWARD</span></div><div class="project-info"><h3>Risk Framework</h3><p>A personal framework for thinking about exposure, scenarios, and strategic capital allocation.</p><div class="tags"><span>ANALYSIS</span><span>STRATEGY</span></div><a class="project-link" href="#contact">Discuss this idea <span>↗</span></a></div></article>
+          <article class="project-card project-card-paper reveal"><div class="project-top"><span class="project-type">03 / PRACTICE</span><span class="project-icon">↗</span></div><div class="code-visual"><span>&lt;/&gt;</span><p>build<br /><b>better</b><br />every day<span class="cursor"></span></p></div><div class="project-info"><h3>Learning Lab</h3><p>An evolving collection of small experiments built while growing my frontend skills.</p><div class="tags"><span>BUILDING</span><span>ITERATING</span></div><a class="project-link" href="#contact">Discuss this idea <span>↗</span></a></div></article>
+        </div>
+      </section>
+
+      <section class="testimonials section-grid section-space" id="testimonials">
+        <div class="section-kicker"><span>05</span><span class="line"></span><span>Testimonials</span></div>
+        <div class="testimonials-content reveal">
+          <div class="section-heading"><p class="overline">Words from the people around the work</p><h2>Trust is<br /><em>earned.</em></h2></div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card"><span class="quote-mark">“</span><p>Real client feedback will be added here.</p><strong>Client name</strong><small>Role / company</small></article>
+            <article class="testimonial-card"><span class="quote-mark">“</span><p>Share a short comment about working with Samiullah.</p><strong>Teacher or colleague</strong><small>Role / organization</small></article>
+            <article class="testimonial-card testimonial-card-accent"><span class="quote-mark">“</span><p>Verified feedback makes this portfolio stronger and more personal.</p><strong>Your next testimonial</strong><small>Available for collaboration</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="business section-space" id="business">
+        <div class="section-kicker"><span>06</span><span class="line"></span><span>Private opportunities</span></div>
+        <div class="business-header reveal"><div><p class="overline">Agricultural land services</p><h2>Land with<br /><em>potential.</em></h2></div><p class="section-aside">A focused space for agricultural land sale and purchase, with clear conversations and long-term value in mind.</p></div>
+        <div class="business-grid">
+          <article class="business-card business-card-dark reveal"><span class="business-index">01 / LAND RESEARCH</span><div class="business-icon">⌂</div><h3>Agricultural Land</h3><p>Researching agricultural land with attention to location, access, use, and long-term potential.</p><a href="https://wa.me/923291504030?text=Hello%20Samiullah%2C%20I%27d%20like%20to%20discuss%20agricultural%20land." target="_blank" rel="noopener">Ask about land <span>↗</span></a></article>
+          <article class="business-card business-card-gold reveal"><span class="business-index">02 / SALE</span><div class="business-icon">◇</div><h3>Land for Sale</h3><p>Connect with us about agricultural land available for sale and receive the relevant details.</p><a href="https://wa.me/923291504030?text=Hello%20Samiullah%2C%20I%27m%20interested%20in%20agricultural%20land%20for%20sale." target="_blank" rel="noopener">View sale details <span>↗</span></a></article>
+          <article class="business-card business-card-outline reveal"><span class="business-index">03 / PURCHASE</span><div class="business-icon">✦</div><h3>Land Purchase</h3><p>Share your preferred location, size, and budget to discuss a suitable agricultural land option.</p><a href="https://wa.me/923291504030?text=Hello%20Samiullah%2C%20I%27m%20looking%20to%20purchase%20agricultural%20land." target="_blank" rel="noopener">Find land to buy <span>↗</span></a></article>
         </div>
       </section>
 
       <section class="contact section-space" id="contact">
-        <div class="contact-panel reveal"><div class="section-kicker"><span>04</span><span class="line"></span><span>Get in touch</span></div><div class="contact-content"><p class="overline">Have an idea worth exploring?</p><h2>Let’s make<br /><em>something useful.</em></h2><p class="contact-copy">Choose a platform or send your details through the contact form. I’ll get back to you soon.</p><div class="contact-links"><a class="contact-link contact-trigger" data-contact="email" href="#whatsapp-form"><span class="contact-link-icon">@</span><span><small>Email</small><strong>chsami1596@gmail.com</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="instagram" href="#whatsapp-form"><span class="contact-link-icon">◎</span><span><small>Instagram</small><strong>@ch_sami1596</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="facebook" href="#whatsapp-form"><span class="contact-link-icon">f</span><span><small>Facebook</small><strong>Connect on Facebook</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="whatsapp" href="#whatsapp-form"><span class="contact-link-icon">◔</span><span><small>WhatsApp</small><strong>03291504030</strong></span><b>↗</b></a><a class="contact-link contact-trigger contact-link-form" data-contact="whatsapp" href="#whatsapp-form"><span class="contact-link-icon">+</span><span><small>Contact form</small><strong>Send your details</strong></span><b>↗</b></a></div><div class="contact-meta"><span>Based in Pakistan</span><span>Available for learning & collaboration</span></div></div></div>
+        <div class="contact-panel reveal"><div class="section-kicker"><span>07</span><span class="line"></span><span>Get in touch</span></div><div class="contact-content"><p class="overline">Have an idea worth exploring?</p><h2>Let’s make<br /><em>something useful.</em></h2><p class="contact-copy">Choose a platform or send your details through the contact form. I’ll get back to you soon.</p><div class="contact-links"><a class="contact-link contact-trigger" data-contact="email" href="#whatsapp-form"><span class="contact-link-icon">@</span><span><small>Email</small><strong>chsami1596@gmail.com</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="instagram" href="#whatsapp-form"><span class="contact-link-icon">◎</span><span><small>Instagram</small><strong>@ch_sami1596</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="facebook" href="#whatsapp-form"><span class="contact-link-icon">f</span><span><small>Facebook</small><strong>Connect on Facebook</strong></span><b>↗</b></a><a class="contact-link contact-trigger" data-contact="whatsapp" href="#whatsapp-form"><span class="contact-link-icon">◔</span><span><small>WhatsApp</small><strong>03291504030</strong></span><b>↗</b></a><a class="contact-link contact-trigger contact-link-form" data-contact="whatsapp" href="#whatsapp-form"><span class="contact-link-icon">+</span><span><small>Contact form</small><strong>Send your details</strong></span><b>↗</b></a></div><div class="contact-meta"><span>Based in Pakistan</span><span>Available for learning & collaboration</span></div></div></div>
       </section>
     </main>
     <footer class="site-footer">
