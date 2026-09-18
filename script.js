@@ -92,7 +92,7 @@ whatsappForm.addEventListener('submit', (event) => {
   const destinations = {
     whatsapp: `https://wa.me/923291504030?text=${encodedMessage}`,
     email: `mailto:chsami1596@gmail.com?subject=Portfolio%20contact%20from%20${encodeURIComponent(details.get('name'))}&body=${encodedMessage}`,
-    instagram: 'https://ig.me/m/ch_sami1596',
+    instagram: 'https://www.instagram.com/direct/new/?username=ch_sami1596',
     facebook: 'https://www.facebook.com/share/18nmsbmomQ/'
   };
   if (selectedContact === 'instagram' || selectedContact === 'facebook') {
